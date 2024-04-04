@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.Conntainer {
+  width: 60%;
+  margin: 0 auto;
+  border: 1px solid;
+  display: flex;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  box-shadow: 60px -16px rgb(81, 159, 248);
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #808080;
+}
+.Container_Form {
+  width: 50%;
+}
+
+.Form__Title {
+  font-size: 2em;
+  padding: 50px;
+}
+
+.Form {
+  padding: 0 50px 0 50px;
+}
+
+#Group__Contraseña {
+  margin-top: 50px;
+}
+.Form__Label {
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.Form__Input {
+  width: 100%;
+  height: 3em;
+  border-radius: 10px;
+  border: 1px solid #808080;
+}
+
+.Form__Input:focus {
+  outline: none;
+  border: 1px solid #808080;
+}
+.Conntainer__Button {
+  padding: 30px;
+  text-align: center;
+  margin-top: 50px;
+}
+.Form__Button {
+  width: 100%;
+  background-color: rgb(81, 159, 248);
+  border: none;
+  border-radius: 10px;
+  font-size: 1.5em;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.Form__Button:hover {
+  background-color: rgb(12, 106, 214);
+}
+
+.container__Img {
+  width: 50%;
+  background-color: rgb(206, 242, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Login__Img {
+  animation: fadein 0.8s;
+  width: 350px;
+  height: 500px;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.Button__Exit {
+  display: block;
+  background-color: rgb(81, 159, 248);
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2em;
+  padding: 10px;
+  color: white;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.Button__Exit:hover {
+  background-color: rgb(12, 106, 214);
+}
+
+/* /*Alert_send----> */
+.Alert_Send {
+  position: fixed;
+  display: flex;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 4%;
+  margin: 0;
+  background-color: red;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.Alert_Send_Title {
+  text-align: center;
+  width: 100%;
+}
+.Img_cerrar {
+  cursor: pointer;
+}
+
+/* Messaje_Send */
+.Messaje_Send {
+  width: 100%;
+  padding: 10px;
+  display: none;
+}
+
+.Messaje_Send_Title {
+  text-align: center;
+}
+
+/* Error */
+.Alert_Send-Active {
+  display: flex;
+}
+.Active {
+  display: block;
+}

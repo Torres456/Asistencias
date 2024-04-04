@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .Header{
+    width: 100%;
+    border-bottom: 1px solid rgb(134, 134, 134);
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .Header_Containner_Img{
+    width: 30%;
+    text-align: right;
+  }
+  .Img_Arrow{
+    width: 40px;
+    cursor: pointer;
+  }
+  .Header__Title{
+    width: 70%;
+    text-align: left;
+margin-left: 20px;
+  }
+
+
+  #MatriculaP{
+    display: none;
+  }
+
+  .Data {
+    border: 1px solid rgb(65, 51, 51);
+    border-radius: 10px;
+    padding: 10px;
+    width: 80%;
+    margin: 20px auto 0px auto;
+    box-shadow: 2px 2px 2px black;
+  }
+
+  .Data__Title {
+    width: 100%;
+  }
+
+  .Box__Data {
+    padding: 10px;
+  }
+  .Data__Title{
+    border-bottom: 1px solid;
+  }
+  .Data__Info {
+    display: flex;
+    padding: 10px;
+  }
+  .Data__Info_Label {
+    display: block;
+    width: 50%;
+    font-size: 1.2em;
+  }
+  
+  .Data__Info_LabelA{
+    width: 40%;
+  }
+  .Data__Info_LabelE {
+    color: rgb(127, 127, 126);
+  }
+
+
+  /* message */
+
+  .Messaje_Send{
+    text-align: center;
+    display: none;
+  }
+
+  /* Butons */
+  .Container__Buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    padding: 20px;
+  }
+  .Button__Option{
+    width: 20%;
+    font-size: 1.2em;
+    padding: 5px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 10px;
+  }
+  .Button__Option-One{
+    background-color: red;
+  }
+  .Button__Option-One:hover{
+    background-color: rgb(58, 3, 3);
+  }
+
+  .Button__Option-Two{
+    background-color: rgb(11, 160, 9);
+  }
+  .Button__Option-Two:hover{
+    background-color: rgb(7, 74, 6);
+  }
+
+   /* /*Alert_send----> */
+   .Alert_Send {
+    position: fixed;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50px;
+    margin: 0;
+    background-color: red;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .Alert_Send_Title {
+    text-align: center;
+    width: 100%;
+  }
+  .Img_cerrar {
+    cursor: pointer;
+  }
+
+  .Active {
+    display: block;
+  }
+  .Alert_Send-Active {
+    display: flex;
+  }
+
+  /* imagenes error */
+.Img__error{
+  text-align: center;
+}
+.Img__Get{
+  width: 300px;
+  height: 300px;
+}
+
+
+

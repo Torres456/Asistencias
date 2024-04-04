@@ -1,0 +1,533 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  position: relative;
+}
+/* Preloader */
+.hidden {
+  overflow: hidden;
+}
+.centrado {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: #ffffff;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Img__Loading {
+  width: 20%;
+  height: 40%;
+}
+
+/* Header*/
+.Header {
+  width: 100%;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.Header__Title {
+  padding: 10px;
+}
+
+.line {
+  width: 70%;
+  height: 5px;
+  background-image: linear-gradient(to bottom right, #099caa, #72d35f);
+  margin: 0 auto;
+}
+
+.Data {
+  border: 1px solid rgb(65, 51, 51);
+  border-radius: 10px;
+  padding: 10px;
+  width: 80%;
+  margin: 20px auto 0px auto;
+  box-shadow: 2px 2px 2px black;
+}
+/* .Data__Title {
+    border-bottom: 1px solid;
+    padding: 5px;
+  } */
+.Data__Container_Options {
+  border-bottom: 1px solid;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.Data__Title {
+  width: 50%;
+}
+.Link__Edit {
+  width: 50%;
+  text-align:right;
+}
+
+.Box__Data {
+  padding: 10px;
+}
+
+.Data__Info {
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid rgb(134, 134, 134);
+}
+.Data__Info_Label {
+  display: block;
+  width: 50%;
+  font-size: 1.2em;
+}
+
+.Data__Info_LabelA{
+  width: 40%;
+}
+.Data__Info_LabelE {
+  color: rgb(127, 127, 126);
+}
+
+
+.Data_Containner_Img{
+  width: 10%;
+  text-align:right;
+}
+
+.Img_Arrow{
+  cursor: pointer;
+  width: 40px;
+}
+
+.Data__InfoH {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.Data__Info_LabelH {
+  color: rgb(127, 127, 126);
+  width: 10%;
+}
+.Box__Hours{
+  width:70%;
+  /* display: flex; */
+  text-align: center;
+}
+
+.Option__Select{
+padding: 10px;
+margin-top: 10px;
+}
+
+.Time__Box{
+  margin-top: 10px;
+}
+.SelectB{
+  display: none;
+}
+
+.SelectC{
+  display: none;
+}
+
+
+
+
+.Time{
+  width: 20%;
+}
+.Button__Option-H {
+  width: 10%;
+  background-color: #2ea815;
+  font-size: 1.1em;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.Button__Option-B {
+  width: 20%;
+  background-color: #ff1515;
+  font-size: 1.1em;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.Button__Option-B:hover{
+ 
+  background-color: #580707;
+}
+
+
+.Button__Option-H:hover {
+  background-color: #0f4803;
+}
+/* /*Alert_send----> */
+.Alert_Send {
+  position: fixed;
+  display: flex;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 4%;
+  margin: 0;
+  background-color: red;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  z-index: 10000;
+}
+
+.Alert_Send_Title {
+  text-align: center;
+  width: 100%;
+}
+.Img_cerrar {
+  cursor: pointer;
+}
+
+/* Pasword */
+.Data__Info_Password {
+  border: none;
+  color: black;
+}
+.Input__None {
+  display: none;
+}
+
+/* Upload_File */
+.container-input {
+  text-align: center;
+  padding: 50px 0;
+  border-radius: 6px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.inputfile + label {
+  max-width: 80%;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  padding: 0.625rem 1.25rem;
+}
+
+.inputfile + label svg {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  fill: currentColor;
+  margin-top: -0.25em;
+  margin-right: 0.25em;
+}
+
+.iborrainputfile {
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Lato";
+}
+
+.inputfile-5 + label {
+  color: #1507ae;
+}
+
+.inputfile-5:focus + label,
+.inputfile-5.has-focus + label,
+.inputfile-5 + label:hover {
+  color: #0a0358;
+}
+
+.inputfile-5 + label figure {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #1f0289;
+  display: block;
+  padding: 10px;
+  margin: 0 auto 10px;
+}
+
+.inputfile-5:focus + label figure,
+.inputfile-5.has-focus + label figure,
+.inputfile-5 + label:hover figure {
+  background-color: #0d0237;
+}
+
+.inputfile-5 + label svg {
+  width: 100%;
+  height: 100%;
+  fill: #fff;
+}
+
+/* input_description */
+.Form__Group {
+  width: 80%;
+  margin: 0 auto;
+}
+.Form__label {
+  display: block;
+  font-size: 1.5em;
+  padding: 10px;
+}
+
+.Form__Input {
+  width: 80%;
+  height: 25px;
+  border-radius: 10px;
+  border: 2px solid blue;
+  padding: 10px;
+  height: 3em;
+}
+
+.Form__Input:focus {
+  border: 2px solid rgb(26, 255, 0);
+  outline: none;
+}
+
+/* file */
+.Button__File {
+  font-size: 1.2em;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #1605c9;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.Button__File:hover {
+  background-color: #07023c;
+}
+
+/* Dates */
+.Box_Dates {
+  display: flex;
+  padding: 10px;
+  justify-content: space-around;
+  
+}
+.Dates__Search {
+  width: 40%;
+}
+
+
+/* Sanciones */
+.Data_TextArea{
+  margin-top: 10px;
+}
+
+.Title__Observaciones{
+  display: block;
+  text-align: center;
+}
+.Observaciones__Text{
+  margin-top: 10px;
+  width: 100%;
+  vertical-align:middle;
+  font-size: 1.2em;
+}
+
+
+/* options */
+.Container__Buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.Button__Option {
+  font-size: 1.1em;
+  padding: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+  border: 0px;
+  color: white;
+  border-radius: 10px;
+}
+.Button__Option-One {
+  background-color: red;
+}
+.Button__Option-One:hover {
+  background-color: rgb(153, 9, 9);
+}
+.Button__Option-Two {
+  background-color: rgb(6, 170, 6);
+}
+.Button__Option-Two:hover {
+  background-color: rgb(3, 79, 3);
+}
+
+.Messaje_Send {
+  text-align: center;
+  padding: 10px;
+  display: none;
+}
+
+.Button_Pdf{
+  display: block;
+  margin: 20px auto 0px auto;
+  background-color: #3021d6;
+  border-color: #3021d6;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2em;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.Button_Pdf:hover{
+ 
+  background-color: #5041f5;
+  border-color: #5041f5;
+}
+
+
+
+/* options */
+.Box__Items{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  z-index: 100000;
+}
+.Box__Items:hover{
+  height: 220px;
+}
+.Box__Items:hover .Box_One{
+  visibility: visible;
+  bottom: 70px;
+}
+.Box__Items:hover .Box_Two{
+  visibility: visible;
+  bottom: 140px;
+}
+
+.Box_Two:hover:before{
+  visibility: visible;
+  color:#000;
+}
+.Box_One:hover:before{
+  visibility: visible; 
+  color:#000;
+}
+
+/* Buttons-main */
+.Btn_Main{
+  position: absolute;
+  bottom:0 ;
+  right: 0;
+  border:1px solid #0048ad;
+  background: #0048ad;
+  color:#ffff00;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  z-index: 90090; 
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+
+.Box_One::before{
+  content: "Regresar";
+  background: #ede903;
+  border:1px solid #ede903;
+  position: absolute;
+  left: -90px; 
+  padding: .5em;
+  visibility: hidden;
+}
+.Box_Two::before{
+  content: "Cerrar sesión";
+  background: #d20603;
+  border:1px solid #d20603;
+  position: absolute;
+  left: -120px; 
+  padding: .5em;
+  visibility: hidden;
+  color: wheat;
+}
+.Box_One{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border:1px solid #ffee00;
+  background: #ffee00;
+  color: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  z-index: 90080; 
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  -webkit-transition: all .5s;
+  visibility: hidden;
+}
+.Box_Two{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border:1px solid #d20303;
+  background: #d20303;
+  color:#fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  z-index: 9070; 
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  visibility: hidden;
+  -webkit-transition: all 1s;
+}
+
+/* Cambios */
+.Display{
+  display: none;
+}
+/* Error */
+.Alert_Send-Active {
+  display: flex;
+}
+.Active {
+  display: block;
+}

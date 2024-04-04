@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+/* Preloader */
+.hidden {
+  overflow: hidden;
+}
+.centrado {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: #ffffff;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Img__Loading {
+  width: 20%;
+  height: 40%;
+}
+
+
+.Header {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.5em;
+}
+
+.line {
+  width: 70%;
+  height: 5px;
+  background-image: linear-gradient(to bottom right, #00c3ff, #0004ff);
+  margin: 0 auto;
+}
+
+.Search{
+    width: 100%;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.5em;
+}
+.Search__Input{
+    width: 50%;
+    height: 30px;
+    border: 1.5px solid black;
+    border-radius: 10px;
+}
+.Search__Input:focus{
+    border: 1.5px solid rgb(0, 17, 255);
+}
+
+
+/* Tabla */
+
+  .datosDb{
+    height: 80%;
+    width: 100%;
+    padding:20px;
+    /* overflow-y: scroll; */
+  }
+  #Table__Users {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-spacing: 0;
+    width: 100%;
+    border-radius: 6px 6px 0 0;
+  }
+  
+  #Table__Users td,
+  #Table__Users th {
+    padding: 8px;
+    text-align: center;
+    height: 50px;
+  }
+  
+  #Table__Users tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  #Table__Users tr:hover {
+    background: #e8f2fd;
+    transition: all 0.1s ease-in-out;
+  }
+  
+  #Table__Users th:first-child {
+    border-radius: 6px 0 0 0;
+  }
+  
+  #Table__Users th:last-child {
+    border-radius: 0 6px 0 0;
+  }
+  
+  #Table__Users th:only-child {
+    border-radius: 6px 6px 0 0;
+  }
+  
+  #Table__Users th {
+    background-color: #0048ad;
+    color: white;
+  }
+
+  .Table__Button{
+    text-decoration:none;
+    color: white;
+    background-color: #ff0037;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .Table__Button:hover{
+    background-color: #043503;
+    
+  }

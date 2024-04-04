@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Preloader */
+.hidden{
+  overflow: hidden;
+}
+.centrado{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: #ffffff;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Img__Loading{
+
+  width: 20%;
+  height: 40%;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+ background-color: white;
+ font-family: 'Outfit', sans-serif;
+
+}
+
+.Info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.Info__Box {
+  width: 25%;
+  background-color: #04af76;
+  position: relative;
+}
+
+.Info__Container_Boxes {
+  width: 100%;
+  display: flex;
+}
+.Info__Box_Container {
+  width: 70%;
+  padding: 10px;
+  color: white;
+}
+.Box__Num {
+  font-size: 2em;
+}
+.Box__Description {
+  margin-top: 15px;
+}
+.Info__Box_Image {
+  padding: 10px;
+  width: 30%;
+}
+.Image__Box {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+.Box_Option {
+  position: absolute;
+  font-size: 1.1em;
+  text-align: center;
+  width: 100%;
+  background-color: #024f35;
+  color: white;
+  cursor: pointer;
+  margin-top: auto;
+  margin-bottom: 30px;
+}
+
+.Box_Two {
+  background-color: red;
+}
+.Box_Option_Two {
+  background-color: rgb(121, 1, 1);
+}
+
+.Box_Three {
+  background-color: rgb(209, 209, 28);
+}
+.Box_Option_Three {
+  background-color: rgb(111, 111, 7);
+}
+
+/* section table */
+.Table {
+  width: 100%;
+  margin-top: 20px;
+}
+.Table__Title {
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+/* section search */
+.Table__Option{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+
+  
+}
+.Option__Box{
+  width: 40%;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* section select */
+.Table__Select{
+  height: 2em;
+}
+.Table__Search{
+  height: 2em;
+}
+
+
+
+/* Table */
+#Table__Users {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-spacing: 0;
+  width: 100%;
+  border-radius: 6px 6px 0 0;
+  margin-top: 20px;
+}
+
+#Table__Users td,
+#Table__Users th {
+  padding: 8px;
+  text-align: center;
+  height: 50px;
+}
+
+#Table__Users tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#Table__Users tr:hover {
+  background: #e8f2fd;
+  transition: all 0.1s ease-in-out;
+}
+
+#Table__Users th:first-child {
+  border-radius: 6px 0 0 0;
+}
+
+#Table__Users th:last-child {
+  border-radius: 0 6px 0 0;
+}
+
+#Table__Users th:only-child {
+  border-radius: 6px 6px 0 0;
+}
+
+#Table__Users th {
+  background-color: #0048ad;
+  color: white;
+}
+
+.Table__Button {
+  text-decoration: none;
+  color: white;
+  background-color: #ff0037;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Table__Button:hover {
+  background-color: #043503;
+}
+
+.Table__Alert{
+  text-align: center;
+}
+
+/* imagenes error */
+.Img__error{
+
+  text-align: center;
+}
+.Img__Get{
+  width: 300px;
+  height: 300px;
+}

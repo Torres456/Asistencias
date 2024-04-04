@@ -1,0 +1,68 @@
+/* Table */
+#Table__Users {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-spacing: 0;
+    width: 100%;
+    border-radius: 6px 6px 0 0;
+    margin-top: 20px;
+  }
+  
+  #Table__Users td,
+  #Table__Users th {
+    padding: 8px;
+    text-align: center;
+    height: 50px;
+  }
+  
+  #Table__Users tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  #Table__Users tr:hover {
+    background: #e8f2fd;
+    transition: all 0.1s ease-in-out;
+  }
+  
+  #Table__Users th:first-child {
+    border-radius: 6px 0 0 0;
+  }
+  
+  #Table__Users th:last-child {
+    border-radius: 0 6px 0 0;
+  }
+  
+  #Table__Users th:only-child {
+    border-radius: 6px 6px 0 0;
+  }
+  
+  #Table__Users th {
+    background-color: #0048ad;
+    color: white;
+  }
+  
+  .Table__Button {
+    text-decoration: none;
+    color: white;
+    background-color: #ff0037;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .Table__Button:hover {
+    background-color: #043503;
+  }
+  
+  .Table__Alert{
+    text-align: center;
+  }
+
+  /* imagenes error */
+.Img__error{
+
+  text-align: center;
+}
+.Img__Get{
+  width: 300px;
+  height: 300px;
+}

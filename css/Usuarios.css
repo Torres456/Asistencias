@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Table__Title{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+.DatosDb{
+  padding: 10px;
+}
+/* section search */
+.Table__Option{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    
+  }
+  .Option__Box{
+    width: 30%;
+    text-align: center;
+  }
+  .Option__Box2{
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* section select */
+  .Table__Select{
+    height: 2em;
+  }
+  .Table__Search{
+    height: 2em;
+  }

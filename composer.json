@@ -1,0 +1,17 @@
+{
+    "name": "guiov/asistencias-ccai_1",
+    "autoload": {
+        "psr-4": {
+            "Guiov\\AsistenciasCcai1\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Torres456",
+            "email": "barrientostorres9@gmail.com"
+        }
+    ],
+    "require": {
+        "dompdf/dompdf": "^2.0"
+    }
+}

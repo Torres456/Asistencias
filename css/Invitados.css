@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+/* Preloader */
+.hidden{
+  overflow: hidden;
+}
+.centrado{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: #ffffff;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Img__Loading{
+
+  width: 20%;
+  height: 40%;
+}
+
+
+
+.Header {
+  width: 100%;
+  text-align: center;
+  color: rgb(0, 94, 255);
+  padding: 10px;
+}
+
+.line {
+  width: 70%;
+  height: 5px;
+  background-image: linear-gradient(to bottom right, #ff6600, #ffaa00);
+  margin: 0 auto;
+}
+
+.Shipment {
+  margin-top: 2em;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.Shipment__Container__Form {
+  border: 0.5px solid black;
+  width: 60%;
+  padding: 20px;
+}
+
+.Form__Group {
+  margin-top: 10px;
+}
+
+.Form__label {
+  font-size: 1.2em;
+  padding: 20px 0px 0px 0px;
+}
+
+.Form__Input {
+  height: 35px;
+  width: 100%;
+  border: 1.5px solid #000000;
+  border-radius: 5px;
+}
+
+.Form__Input:focus {
+  border: 2px solid #0022ff;
+  outline: none;
+  box-shadow: 5px rgba(163, 163, 163);
+}
+
+.Form__Group-input {
+  padding: 10px 0px 0px 0px;
+}
+
+.Shipment__send {
+  position: sticky;
+  top: 10%;
+  width: 25%;
+  height: 600px;
+}
+
+.Send__Button {
+  width: 60%;
+  font-size: 1.2em;
+  background-color: rgb(240, 112, 0);
+  border: 1px solid rgb(240, 112, 0);
+  color: white;
+  cursor: pointer;
+}
+
+.Send__Button:hover {
+  background-color: rgb(240, 64, 0);
+  border: 1px solid rgb(240, 64, 0);
+}
+
+.Shipment__Send__Button {
+  border: 0.5px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+.Shipment__Send__Requeriments {
+  border: 0.5px solid black;
+  margin-top: 1em;
+  padding: 10px;
+}
+
+.Container__Requeriments {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.Requeriments__Shipment {
+  color: white;
+  border-radius: 5px;
+  margin-top: 1em;
+  font-size: 1.1em;
+  padding: 5px;
+  background-color: rgb(0, 94, 255);
+  cursor: pointer;
+}
+.Requeriments__Shipment:hover{
+  background-color: rgb(2, 25, 64);
+}
+.Form__Input-Error {
+  padding: 10px;
+  color: red;
+  display: none;
+}
+
+.Alert_Send {
+  position: fixed;
+  display: flex;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 4%;
+  margin: 0;
+  background-color: red;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.Alert_Send_Title {
+  text-align: center;
+  width: 100%;
+}
+
+.Img_cerrar {
+  cursor: pointer;
+}
+
+/* //Button--Id */
+.Generate__Id {
+  padding: 10px;
+}
+.Button__Id {
+  font-size: 1em;
+  padding: 7px;
+  background-color: rgb(0, 94, 255);
+  border: none;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.Button__Id:hover {
+  background-color: #0022ff;
+}
+
+/* mensaje-send */
+
+.Messaje_Send {
+  width: 100%;
+  padding: 10px;
+  display: none;
+}
+
+.Messaje_Send_Title {
+  text-align: center;
+}
+
+/* variables de error y cambios */
+.Formulario__Grupo-Incorrecto .Form__Input {
+  border: 2px solid rgb(255, 1, 1);
+}
+
+.Requeriments__Shipment-Active {
+  display: none;
+}
+.Active {
+  display: block;
+}
+
+.Alert_Send-Active {
+  display: flex;
+}
+
+.Shipment-active {
+  display: none;
+}
+
+.Video{
+  display: none;
+}
