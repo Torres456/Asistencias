@@ -10,7 +10,9 @@ const select = document.getElementById('Responsable');
 let num = 1;
 Button__Salida.forEach((Buttons) => {
     
-    Buttons.addEventListener('click', () => {
+    Buttons.addEventListener('click', (e) => {
+
+        e.preventDefault();
         document.getElementById('Form_One').reset();
         document.getElementById('Form_Two').reset();
         campos.Matricula = false;
