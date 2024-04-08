@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+body{
+  background-color: #EEEEEE;
+}
 /* Preloader */
 .hidden{
   overflow: hidden;
@@ -35,16 +38,21 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 20px;
+  padding: 15px 50px;
+  top: 0;
+  left: 0;
+  background-color: #222831;
 }
 
 .Header__Button {
-  border-radius: 10px;
-  padding: 10px;
-  background-color: rgb(240, 112, 0);
-  border: 1px solid rgb(240, 112, 0);
-  color: white;
-  cursor: pointer;
+  background: #ff8800;
+    border: none;
+    color: white;
+    padding: 8px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
 }
 
 .Header__Button:hover {
@@ -52,32 +60,52 @@ body {
 }
 
 .Header__Title {
-  color: rgb(0, 94, 255);
+  color: #65c916;
 }
 
 .Container__Fetch {
   text-align: center;
+  width: 100%;
+  padding: 10px;
+  background-color: #31363F;
+  color: #EEEEEE;
 }
 
 .Container_Boxes {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  height: 80vh;
+  justify-content: space-evenly;
+  padding: 10px;
 }
 
 .Container__Info {
-  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
 }
+
+.Container__Info__Title{
+  width: 100%;
+  display: grid;
+  place-items: center;
+  gap: 10px;
+}
+
 .Container__Info__Title{
     text-align: center;
-    font-size: 2em;
-    color: rgb(0, 94, 255);
+    font-size: 1.6em;
+    color: #65c916;
   }
 
   .Container__Table{
     width: 45%;
     padding: 1.5em;
+    background-color: #ffffff;
+    border-radius: 25px;
   }
 
   .Container__Table__Title{
@@ -110,8 +138,66 @@ body {
 }
 .Boxes__Title{
     text-align: center;
-    color:rgb(240, 112, 0);
+    color:#222831;
+    font-size: 1.4rem;
 }
+
+
+.Form__Group-input {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 1em 0 1em 0;
+  width: 100%;
+  position: relative;
+}
+
+.Form__Group-input input {
+  font-size: 100%;
+  padding: 0.8em;
+  outline: none;
+  border: 2px solid #222831;
+  background-color: transparent;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.Form__Select{
+  font-size: 100%;
+  padding: 0.8em;
+  outline: none;
+  border: 2px solid #222831;
+  background-color: transparent;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.Form__Group-input label {
+  font-size: 100%;
+  position: absolute;
+  left: 0;
+  padding: 0.8em;
+  margin-left: 0.5em;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  color: #222831;
+}
+
+.Form__Group-input :is(input:focus, input:valid)~label {
+  transform: translateY(-50%) scale(.9);
+  margin: 0em;
+  margin-left: 1.3em;
+  padding: 0.4em;
+  background-color: #ffffff;
+  color: #65c916;
+  font-weight: bolder;
+
+}
+
+.inputGroup :is(input:focus, input:valid) {
+  border-color: rgb(37, 37, 211);
+}
+
+
+
 .Form__label{
     display: block;
     font-size: 1.3em;
@@ -120,10 +206,10 @@ body {
 
 .Form__Input{
     width: 100%;
-    height: 2em;
-    margin-top: 5px;
-    border: 1.5px solid #000000;
-    border-radius: 5px; 
+    padding: 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
 }
 
 .Form__Input:focus{
@@ -133,44 +219,72 @@ body {
 }
 
 .Button__Box_One{
-    display: block;
-    font-size: 1.2em;
-    margin-top: 1em;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5px;
-    border-radius: 5px;
-    background-color: rgb(240, 112, 0);
-    color: white;
-    border: 1px solid rgb(240, 112, 0);
-    cursor: pointer;
+  width: 190px;
+  background: #65c916;
+  border: none;
+  color: white;
+  padding: 13px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.2rem;
 }
 
 .Button__Box_One:hover{
-  background-color: rgb(255, 85, 0);
-  border: 1px solid rgb(255, 85, 0);
+  background-color: #489210;
 }
 
 
 .Button_Move{
-    display: block;
-    margin-bottom: 0;
-    background-color: rgb(47, 228, 6);
-    font-size: 1.2em;
+    width: 190px;
+    background: #ff8800;
+    border: none;
     color: white;
-    padding: 7px;
-    margin-left: auto;
-    margin-top: 20px;
-    border: 1px solid rgb(47, 228, 6);
-    border-radius: 10px;
+    padding: 13px;
+    transition: 0.3s ease-in-out;
     cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2rem;
 }
 
 .Button_Move:hover{
- 
-  background-color: rgb(28, 129, 5);
-  border: 1px solid rgb(28, 129, 5);
+  background-color: #d87300;
+}
+
+.Container__Button{
+  margin-top: 20px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(190px,1fr));
+  place-items: center;
+  gap: 10px;
+}
+
+@media (max-width:1080px){
+  .Button_Move{
+    width: 100%;
+  }
+  .Button__Box_One{
+    width: 100%;
+  }
+  .Container__Info{
+    width: 100%;
+  }
+  .Container_Boxes{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .Container__Table{
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .Container__Info{
+    width: 100%;
+    max-width: 100%;
+
+  }
+  
 }
 
 .Box_Two{
@@ -227,24 +341,33 @@ body {
   }
 
   .Fotter{
+    left: 0;
+    bottom: 0;
     display: flex;
     width: 100%;
-    background-color: #0022ff;
+    background-color: #222831;
     padding: 15px;
-    position: absolute;
     bottom: 0;
     flex-wrap: wrap;
     justify-content:space-around;
   }
 
+  @media(max-width:1080px){
+    .Fotter{
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
   .Button__Footer{
-    border-radius: 10px;
-    padding: 10px;
-    background-color: rgb(240, 112, 0);
-    border: 1px solid rgb(240, 112, 0);
+    background: #ff8800;
+    border: none;
     color: white;
-    font-size: 1.2em;
+    padding: 13px;
+    transition: 0.3s ease-in-out;
     cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2rem;
 }
 
 .Button__Footer:hover{
@@ -283,6 +406,9 @@ body {
     overflow-y: scroll;
   
   }
+
+
+
   #Table__Users {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     border-spacing: 0;
