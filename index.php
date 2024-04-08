@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Sistema de asistencias para la Industria 4.0">
-    <link rel="stylesheet" href="css/index.css?see=1.18">
+    <link rel="stylesheet" href="css/index.css?see=1.17">
     <link rel="icon" href="assets/images/IconCCAI.png">
     <title>Asistencias</title>
 </head>
@@ -50,7 +50,7 @@ $Total = mysqli_fetch_array($respuesta2);
 
                             <div class="Form__Group" id="Group__Matricula">
                                 <div class="Form__Group-input">
-                                    <input type="text" class="Form__Input" name="Matricula" id="Matricula"  autocomplete="nope" />
+                                    <input type="text" class="Form__Input" name="Matricula" id="Matricula" required="" autocomplete="nope" />
                                     <label for="Matricula">Matricula:</label>
                                 </div>
                                 <p class="Form__Input-Error"></p>
@@ -59,7 +59,7 @@ $Total = mysqli_fetch_array($respuesta2);
 
                             <div class="Form__Group" id="Group__Equipo">
                                 <div class="Form__Group-input">
-                                    <input type="number" class="Form__Input" name="Equipo" id="Equipo" autocomplete="nope" />
+                                    <input type="number" class="Form__Input" name="Equipo" id="Equipo"required="" autocomplete="nope" />
                                     <label for="Equipo">No.Equipo:</label>
                                 </div>
                                 <p class="Form__Input-Error"></p>
@@ -67,7 +67,7 @@ $Total = mysqli_fetch_array($respuesta2);
 
                             <div class="Form__Group" id="Group__Observaciones">
                                 <div class="Form__Group-input">
-                                    <input type="text" class="Form__Input" name="Observaciones" id="Observaciones"  autocomplete="nope" />
+                                    <input type="text" class="Form__Input" name="Observaciones" id="Observaciones" required="" autocomplete="nope" />
                                     <label for="Observaciones">Recurso/Observaciones:</label>
                                 </div>
                                 <p class="Form__Input-Error"></p>
@@ -92,32 +92,29 @@ $Total = mysqli_fetch_array($respuesta2);
                         </form>
                         <div class="Messaje_Send" id="Messaje_Send">
                             <h2 class="Messaje_Send_Title" id="Messaje_Send_Title">Enviando..</h2>
-                        </div>
- 
+                        </div> 
                     </div>
 
                     <div class="Boxes_Carrucel Box_Two">
                         <h2 class="Boxes__Title">Registro de salida</h2>
-                        <form id="Form_Two">
+                        <form action="" id="Form_Two">
 
                             <div class="Form__Group" id="Group__MatriculaS">
                                 <div class="Form__Group-input">
-                                    <input type="text" class="Form__Input" name="MatriculaS" id="MatriculaS"  autocomplete="nope" />
+                                    <input type="text" class="Form__Input" name="MatriculaS" id="MatriculaS" required="" autocomplete="nope" />
                                 <label for="MatriculaS" >Matricula: </label>
                                 </div>
                                 <p class="Form__Input-Error"></p>
                             </div>
                             <div class="Container__Button">
                                 <input type="submit" value="Registrar" class="Button__Box_One" id="Button__Salida">
-                                <button class="Button_Move  Button__Entrada" id="Button__EntradaM">Registrar Entrada</button>
+                                <button class="Button_Move  Button__Entrada" id="Button__EntradaM">Registrar Salida</button>
                             </div>
                         </form>
 
                         <div class="Messaje_Send2" id="Messaje_Send2">
                             <h2 class="Messaje_Send_Title" id="Messaje_Send_Title2"></h2>
                         </div>
-
-
                     </div>
 
                 </div>
