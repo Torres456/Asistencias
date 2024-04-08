@@ -39,7 +39,7 @@ $Total = mysqli_fetch_array($respuesta2);
     <div class="Container_Boxes">
         <div class="Container__Info">
             <div class="Container__Info__Title">
-                <h2 class="Container__Info__Title">Control de asistencias</h2>
+                <h2 class="Container__Info__Title">Control de asistencia</h2>
             </div>
 
             <div class="Carrucel">
